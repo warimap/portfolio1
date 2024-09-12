@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>alx 3_D Maze</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/nonscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Welcome to my Maze project<br /> </h1>
+					</header>
+        <div id="main">
+
+						<!-- Featured Post -->
+					<article class="post featured">
+					                     <header class="major">
+					<h2><a href="#">What is 3_D Maze?</a></h2>
+									
+					<p> Introduction to our final project of the first year at ALX School : 
+					The Maze project is about doing a game with the SDL2 library in the C language, so basically a labyrinth game where you need to find the exit.So why did we choose such a project? It is just a labyrinth, 
+					not even made with the bests free games engines like Unity or Unreal, well actually, i was thinking of doing an old looking game without a game engine.The purpose of this project for me is firstly, 
+					to look at how it is possible to do a game without a game engine, secondly to learn the mathematics and physics behind it and finally, to remember the old days when they played at a game 
+					like Wolfenstein 3D (only talking about graphisms here).The Maze project is inspired in the world of the famous video game Wolfenstein 3D, which is built from a grid of walls of uniform height that are 
+					joined by solid colored floors and ceilings. To draw the world, a single ray is traced for each column of pixels on the screen and a vertical slice of the wall texture is selected and scaled according to 
+					where in the world the lightning strikes a wall and what so far he travels before he does. This project does not intend to build an exact replica of the video game or match it in complexity, but to generate
+					the basic infrastructure to obtain an approximate model in the projection of the game environment and the player’s movement.
+					</p>
+					                      </header>
+						<a href="#" class="image main"><img src="images/maze gif.gif" alt="" /></a>
+					        </article>
+
+							
+						<!-- Posts -->
+						            <section class="posts">  
+								<article>
+					<a href="#" class="image fit"><img src="images/maze22.png" alt="" /></a>
+			               <p> It is ALX default portfolio project that enables a student to create a game in 3D using raycasting. 
+					 Ray-casting is a techniques that transform a limited form of data into a 3D projection by tracing rays from the view point to the viewing volume.</p>
+					
+								</article>
+							    </section>
+							
+	</div>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="icons">
+							<li><a href="https://twitter.com/zoekayz" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.linkedin.com/in/kzoraunye" class="icon brands fa-linkedin"><span class="label">Linked In</span></a></li>
+							<li><a href="https://www.github.com/kudzie-zoh/alx-3D_Maze" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+							
+								</header>
+
+								<!-- Text stuff -->
+									<h2>Introduction</h2>
+									
+									<h3>Ray-casting</h3>
+									<p><span class="image left"><img src="images/ray.gif" alt="" /></span>This is a 2D game which are developed using <b>ray-casting</b> technique.<a href ="https://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/">ray-casting</a> is a techniques that transform a limited form of data(a very simplified map or floor plan) into a 3D projection by tracing rays from the view point inot the viewing volume. Ray-casting sensation began with the release of a game, Wolfenstein 3D(iD software), in 1992. raycasting can go very fast, because only a calculation has to be done for every vertical line of the screen.</p>
+									<hr />
+									
+									<h2>Features</h2>
+ 									<p> some of the features that are covered by the Maze project are described below in steps. </p>
+									<header>
+										<h2>Orientation</h2>
+										<p>different color depending on the orientation of the walls</p>
+									</header>
+									<span class="image right" ><img src="images/m2.png" alt="" /></span>
+									<p>In this part of the project, I have drawn a different color depending on the orientation of the walls. As you can see from the screen shoot, walls facing from one side is drawn in different collor from walls facing from the other side. some of the walls are lighter than the other. some are darker than the other walls</p>
+									<header>
+										<h3>Rotation</h3>
+										<p>rotate the camera during execution</p>
+									</header>
+									<p><span class="image left"><img src="images/maze 2.gif" alt="" /></span>In this part of the project, I provide a way to rotate the camera during the exectution. the camera is rotated using left & right keys. you can also use a & d from the keybored to rate the camera either clockwise or counterclockwise.both keys from the keybord, arrow or a,d can be used to rotate the player in every direction at a given postion.</p>
+									<header>
+										<h4>Move</h4>
+										<p>move the camera during execution</p>
+									</header>
+									<p><span class="image right"><img src="images/mov.gif" alt="" /></span>In this part of the project, I have provided a way to move the camera during the execution.The camera is moved forward by pressing the up or w keys from the keyborad. on the other hand the camera is moved backward using down or s keys of the keyborad.</p>
+
+									<header>
+										<h4>Collision</h4>
+										<p>detect collision of the player</p>
+									</header>
+									<p><span class="image left"><img src="images/col.png" alt="" /></span>In this part, I have handled the collision of the player so that the player is not able to enter the walls. I have made the player slide on the walls instead of just stop it.simple change to some direction, then the player will slide on the walls. the application detects when the player approaches the wall. if the player is approaches the threshold value, it will be forced to slide the walls.</p>
+
+									<header>
+										<h4>Parser & Map</h4>
+										<p>parse & draw the map from a file</p>
+									</header>
+									<p><span class="image right"><img src="images/map.png" alt="" /></span>In this part I have implemented a parser to get the map from a file. thus if the users want to use the default map provided by the application, they can run the application without provideing the path to the map file. If they want theire own map, they can provide the path to the map file & then the application will use the provided map. I have drawn the map of the application on the top left corner of the window. In the map the walls are indicated by the while color whereas the empty spaces are indicated by black colors. the player's line of sight is also included in the map. it is indicated by the line colored with yellow. As you can see the new map which is parsed from the file is drawn on the window. </p>
+
+									<header>
+										<h4>Texture</h4>
+										<p>texture of the wall & the floor</p>
+									</header>
+									<p><span class="image fit"><img src="images/maze1.png" alt="" /></span>In this part of the project, we have textured the wall and the floor. the wall is texture with bricks, doors & windows. the direction to empty spaces are also indicated in the wall. the ground is also textured with a beautiful carpet</p>
+
+									<header>
+										<h4>Multi-task</h4>
+										<p>move & rotate at the same time</p>
+									</header>
+									<p>In this part of the project, I have added a way to move on several directions & rotate in the same time. for example you can move forwared & rotate in clockwise direction at the same time. This is one way of hadnling multiple events on the same frame</p>
+
+									<header>
+										<h4>Weapons</h4>
+										<p>weapons texture</p>
+									</header>
+									<p><span class="image left"><img src="images/gun.png" alt="" /></span>In this part of the project, I have added a weapon texture to the line of sight of the player. whenever you move to some direction, the weapon is also with you. by default I have positioned at the center width of the screen & It will move whenever the player move to some direction. In the future we can add possibilites of changing the weapon with some key from the keyboared.</p>
+
+									<header>
+										<h4>door</h4>
+										<p>open the door</p>
+									</header>
+									<p><span class="image fit"><img src="images/maze33.png" alt="" />In this part of the project, I have added a way to pen the door during the execution. Thus first the player will move to the door and the user must click the an e key from the keyboard. In that case the door will open for the player. As you can see from the screenshot, the door is opened and allows the player to move when the user click an e key from the keyboard.</p>
+
+
+									<hr />
+										<h4>Email</h4>
+										<a href="#">kzoraunye@gmail.com</a>
+										<br />
+										<h3>Social</h3>
+										<ul class="icons alt">
+											<li><a href="https://twitter.com/zoekayz" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="https://www.linkedin.com/in/kzoraunye" class="icon brands alt fa-linkedin"><span class="label">Linked In</span></a></li>
+											<li><a href="https://www.github.com/kudzie-zoh/alx-3D_Maze" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+										</ul>
+									
+
+									<hr />
+
+									<h2>Future Task</h2>
+ 									<p> Due to shortage of time I was unable to complete all parts of project. I will hopefully add the following in the features </p>
+ 									<ul class="alt">
+										<li>handling the gun shoot</li>
+									        <li>Adding rain & a possibility to stop / start the rain</li>
+									</ul>
+									
+                            </section>
+						
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

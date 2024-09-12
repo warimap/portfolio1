@@ -1,2 +1,1 @@
-# Landing-page
-A landing page for the maze project
+##  PROJECT DONE BY WARIMAP FAITH WARIMA NG'ENDO
